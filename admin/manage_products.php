@@ -83,7 +83,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <tr>
                 <td><?= $product['id']; ?></td>
                 <td><?= htmlspecialchars($product['name']); ?></td>
-                <td>$<?= number_format($product['price'], 2); ?></td>
+                <td>₹<?= number_format($product['price'], 2); ?></td>
                 <td><?= htmlspecialchars($product['description']); ?></td>
                 <td><img src="../images/<?= htmlspecialchars($product['image']); ?>" alt="Product Image"></td>
                 <td class="actions">
