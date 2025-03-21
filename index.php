@@ -42,7 +42,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <?php foreach ($products as $product) : ?>
                     <div class="product">
                         <h3><?= htmlspecialchars($product['name']); ?></h3>
-                        <p>Price: $<?= number_format($product['price'], 2); ?></p>
+                        <p>Price: ₹<?= number_format($product['price'], 2); ?></p>
                         <p><?= htmlspecialchars($product['description']); ?></p>
                         <?php if (!empty($product['image'])) : ?>
                             <img src="images/<?= htmlspecialchars($product['image']); ?>" alt="<?= htmlspecialchars($product['name']); ?>" class="product-image">
