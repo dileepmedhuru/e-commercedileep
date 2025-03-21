@@ -196,7 +196,7 @@ $total_cost = 0;  // Initialize total cost variable
                         <img src='../images/{$product['image']}' alt='{$product['name']}' class='item-image'>
                         <div class='item-details'>
                             <div class='item-name'>{$product['name']}</div>
-                            <div class='item-price'>\${$product['price']} x $quantity</div>
+                            <div class='item-price'>₹{$product['price']} x $quantity</div>
                         </div>
                         <div class='item-actions'>
                             <form method='POST' style='display:inline;'>
@@ -215,7 +215,7 @@ $total_cost = 0;  // Initialize total cost variable
         ?>
         <?php if (!empty($cart_items)) : ?>
             <div class="total-cost">
-                Total: $<?= number_format($total_cost, 2); ?>
+                Total: ₹<?= number_format($total_cost, 2); ?>
             </div>
         <?php endif; ?>
         <div class="cart-actions">
